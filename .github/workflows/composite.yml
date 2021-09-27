@@ -15,4 +15,4 @@ jobs:
       - id: actions-say-hello
         uses: akbast/actions-composite@v1
         with:
-          who-to-greet: ${{ env.PERSON }}
+          person: ${{ env.PERSON }}
