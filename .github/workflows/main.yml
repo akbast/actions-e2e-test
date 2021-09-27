@@ -16,11 +16,11 @@ jobs:
         uses: akbast/actions-say-hello@v1
         with:
           who-to-greet: ${{ env.PERSON }}
-      - run: echo random-number ${{ steps.actions-say-hello.outputs.random-number }}
-        shell: bash
+      #- run: echo random-number ${{ steps.actions-say-hello.outputs.random-number }}
+      #  shell: bash
       - id: actions-say-goodbye
         uses: akbast/actions-say-goodbye@v1
         with:
           who-to-say-goodbye: ${{ env.PERSON }}
-      - run: echo random-number ${{ steps.aactions-say-goodbye.outputs.random-number }}
-        shell: bash
+      #- run: echo random-number ${{ steps.aactions-say-goodbye.outputs.random-number }}
+      #  shell: bash
