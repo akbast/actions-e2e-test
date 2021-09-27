@@ -1,5 +1,6 @@
 name: 'Run Custom Actions Directly'
 on: 
+  push:
   workflow_dispatch:
 
 env:
@@ -20,6 +21,6 @@ jobs:
       - id: actions-say-goodbye
         uses: akbast/actions-say-goodbye@v1
         with:
-          who-to-say-goodbye: $ {{ env.PERSON }}
+          who-to-say-goodbye: ${{ env.PERSON }}
       - run: echo random-number ${{ steps.aactions-say-goodbye.outputs.random-number }}
         shell: bash
